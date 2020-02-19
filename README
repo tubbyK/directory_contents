@@ -11,12 +11,6 @@ Directory contents are created in a directory_content.txt file and looks like:
             "files": [
                 "SAP GUI - Shortcut.lnk"
             ],
-            "LFA1": {
-                "count": 1,
-                "files": [
-                    "LFA1.csv"
-                ]
-            },
             "data_files": {
                 "count": 3,
                 "files": [
