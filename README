@@ -1,0 +1,44 @@
+List files and folders from base directory recursively.
+Directory contents are created in a directory_content.txt file and looks like:
+
+{
+    "modified_date": "2020-02-19",
+    "base_path": "c:/self/data",
+    "version": 1,
+    "content": {
+        "data": {
+            "count": 0,
+            "files": [
+                "SAP GUI - Shortcut.lnk"
+            ],
+            "LFA1": {
+                "count": 1,
+                "files": [
+                    "LFA1.csv"
+                ]
+            },
+            "data_files": {
+                "count": 3,
+                "files": [
+                    "data_files_1.csv",
+                    "data_files_2.csv",
+                    "data_files_3.csv",
+                ]
+            }
+        }
+    }
+}        
+
+
+How to Use
+# import
+import directory_contents
+
+# instantiate and provide base directory
+dir = directory_contents.directory(r'c:\self\data')
+
+# recursively list files and folders
+dir.generate_content()
+
+# create cotent file in base directory
+dir.write_content()
